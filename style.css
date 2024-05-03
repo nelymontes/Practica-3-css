@@ -18,3 +18,22 @@
         height: 100%;
         justify-self: center0'0;
 }
+
+.caja-distribucion {
+justify-content: space-between;
+justify-content: space-around;
+flex-direction: column;
+    /* Jusrify-content:center; */
+    /* ajusta el mismo espacio entre los elementos */
+    Justify-content: space-between
+/* Justify-content: space-around */
+    /* ajusta el mismo espacio al rededor de cada elemento */
+}
+
+.caja-distribucion div {
+    color: aqua;
+    height: 50px;
+    width: 50px;
+    border: 1px solid red;
+
+}
