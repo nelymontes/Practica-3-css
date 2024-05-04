@@ -15,13 +15,15 @@
     object-fit: cover;
     grid-column: 1/3;
         grid-row: 1/4;
-        height: 100%;
+        align-self: center;
         justify-self: center0'0;
+        
 }
 
 .caja-distribucion {
+    border: 1px solid blue;
+    display: flex;
 justify-content: space-between;
-justify-content: space-around;
 flex-direction: column;
     /* Jusrify-content:center; */
     /* ajusta el mismo espacio entre los elementos */
@@ -31,9 +33,58 @@ flex-direction: column;
 }
 
 .caja-distribucion div {
-    color: aqua;
+    color: rgb(8, 142, 142);
     height: 50px;
     width: 50px;
-    border: 1px solid red;
+border: 2px solid red;
+    margin: 20px;
 
+}
+.boton-animado{
+        padding: 10px;
+    border: none;
+    /* Modifica el fondo del elemento */
+    background: rgb(9, 9, 225);
+    color: white;
+    border-radius: 5px;
+    /* para modificar el cursor se usa la propiedad cursor */
+cursor: pointer;
+/* para agregar las transiciones se va a usar la etiqueta transition */
+transition: 
+padding 2s, 
+background-color 2s;
+color: 2s;
+
+}
+/* pseudo-clases:permiten realizar acciones */
+.boton-animado:hover {
+    padding: 50px;
+        background: rgb(112, 3, 3);
+    cursor: help;
+    color: yellow;
+}
+
+.caja-animada{
+    position: relative;
+    left: 0px;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: aqua;
+animation: mover-derecha 4s linear infinite alternate-reverse;
+}
+/* Animación para que la caja se desplace a la derecha */
+@keyframes mover-derecha {
+0% {
+    top: 0px;
+left: 0px;
+background-color: aqua;
+}
+50%{
+    top: 50px;
+}
+100% {
+    left: 300px;
+    background-color: blueviolet;
+}
 }
