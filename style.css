@@ -62,6 +62,7 @@ color: 2s;
         background: rgb(112, 3, 3);
     cursor: help;
     color: yellow;
+    font-size: 30px;
 }
 
 .caja-animada{
@@ -87,4 +88,31 @@ background-color: aqua;
     left: 300px;
     background-color: blueviolet;
 }
+}
+
+/* la etiqueta inline por fdefecto son: button, input, img y span */
+.transformacion {
+    display: block;
+    margin: auto;
+    transition: transform 1s;
+}
+.transformacion:hover {
+    /* Podemos escalar el elemento */
+    transform: scale(1.2);
+    transform: rotate(-180dg);
+    /* trasladar el elemento en el eje x,y */
+    transform: translate(0px, 100%);
+}
+
+.titulo-animado {
+    text-align: center;
+    animation: aparecer 2s linear forwards;
+}
+@keyframes aparecer {
+    from {
+        transform: translate(-1000px, 0px);
+    }
+    to {
+        transform: translate(0px, 0px);
+    }
 }
