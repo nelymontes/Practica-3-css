@@ -116,3 +116,19 @@ background-color: aqua;
         transform: translate(0px, 0px);
     }
 }
+
+   .responsive{
+        font-size: 150px
+   }
+    
+    @media screen and (width < 800px) {
+        .responsive{
+            font-size: 120px;
+        }
+        
+    }
+    @media screen and (width <640px) {
+        .responsive {
+            font-size: 100px;
+        }
+    }
